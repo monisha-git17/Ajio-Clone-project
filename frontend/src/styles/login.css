@@ -1,0 +1,193 @@
+/* Full screen overlay */
+.ajio-login-wrapper {
+  height: 100vh;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* AJIO box */
+.ajio-login-box {
+  width: 360px;
+  background: white;
+  padding: 30px 25px;
+  position: relative;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 20px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Heading */
+.ajio-login-box h2 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+/* Labels */
+.ajio-login-box label {
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 18px;
+}
+
+/* Input styling (underline style like AJIO) */
+.ajio-login-box input,
+.ajio-login-box select {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 5px;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+.ajio-login-box input:focus,
+.ajio-login-box select:focus {
+  border-bottom: 1px solid black;
+}
+
+/* Button */
+.continue-btn {
+  margin-top: 25px;
+  width: 180px;
+  padding: 12px;
+  background: #8c6b1f;
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.continue-btn:hover {
+  opacity: 0.9;
+}
+
+/* Terms */
+.terms {
+  margin-top: 18px;
+  font-size: 12px;
+  color: #444;
+}
+
+.link {
+  color: #0056b3;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Bottom note */
+.bottom-note {
+  margin-top: 50px;
+  padding: 12px;
+  background: #fff6d6;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.loginOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+}
+
+.loginBox {
+  width: 460px;
+  background: #fff;
+  padding: 35px 35px;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.25);
+  animation: popup 0.2s ease-in-out;
+}
+
+@keyframes popup {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  right: 18px;
+  top: 12px;
+  border: none;
+  background: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+.loginTitle {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.loginLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.loginInput {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  margin-top: 15px;
+  font-size: 15px;
+  outline: none;
+}
+
+.continueBtn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 14px;
+  background: #8b6b1f;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.continueBtn:hover {
+  background: #7a5f1c;
+}
+
+.termsText {
+  font-size: 12px;
+  margin-top: 18px;
+  color: #444;
+}
+
+.linkText {
+  color: #1a73e8;
+  cursor: pointer;
+}
